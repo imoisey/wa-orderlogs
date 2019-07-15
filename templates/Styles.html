@@ -1,0 +1,81 @@
+<style>
+	.orderlogs-table {
+		width: 100%;
+		margin-top: 10px;
+		font-size: 15px;
+		padding:5px;
+		text-align: center;
+	}
+
+	.orderlogs-table th,
+	.orderlogs-table td {
+		border: 1px solid #000;
+	}
+
+	.orderlogs-table th {
+		font-weight: bold;
+		padding:10px;
+	}
+
+	.orderlogs-table td {
+		padding: 10px;
+	}
+
+	.orderlogs-list {
+		font-size: 12px;
+	}
+
+	.orderlogs-box-content {
+	    margin: 20px 0;
+	    border: 1px solid #ccc;
+	    border-radius: 10px;
+	    padding: 10px;
+	    background: #f0f0f0;
+	}
+
+	.orderlogs-box-content .name {
+		display: inline-block;
+		float: left;
+		margin-right: 20px;
+	}
+
+	.orderlogs-box-content .s-order-timeline-message {
+		margin-top: 20px;
+		margin-bottom: 10px;
+	}
+
+	a.orderlogs-delete {
+	    display: inline-block;
+	    float: left;
+	    margin-right: 10px;
+	    margin-top: -1px;
+	}
+
+	.orderlogs-toggle {
+		background: #e6e6e4;
+	    color: #0068d6;
+	    font-weight: bold;
+	    display: block;
+	    margin-bottom: 10px;
+	    cursor: pointer;
+	    font-size: 14px;
+	    border: 1px solid #000;
+	    padding: 10px;
+	    text-align: center;
+	}
+</style>
+{if $toggle_log}
+<style>
+	.orderlogs-content {
+		display: none;
+	}
+</style>
+<script>
+	$(function(){
+		$(".orderlogs-content").parent().append("<a class=\"orderlogs-toggle\">[`Показать/скрыть историю`]</a>");
+		$(".orderlogs-toggle").on('click', function(e){
+			$(this).siblings(".orderlogs-content").toggle('slow');
+		});
+	});
+</script>
+{/if}

@@ -1,0 +1,193 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: shop/plugins/orderlogs\n"
+"POT-Creation-Date: 2015-07-16 15:22+0300\n"
+"PO-Revision-Date: \n"
+"Last-Translator: shop/plugins/orderlogs\n"
+"Language-Team: shop/plugins/orderlogs\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-Basepath: .\n"
+"Language: en_US\n"
+"X-Generator: Poedit 1.8.11\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPath-1: .\n"
+
+msgid "name"
+msgstr "Name"
+
+msgid "email"
+msgstr "Email"
+
+msgid "phone"
+msgstr "Phone"
+
+msgid "quantity"
+msgstr "Quantity"
+
+msgid "sku_id"
+msgstr "Param"
+
+msgid "shipping"
+msgstr "Shipping"
+
+msgid "discount"
+msgstr "Discount"
+
+msgid "storefront"
+msgstr "Storefront"
+
+msgid "payment_name"
+msgstr "Payment Name"
+
+msgid "shipping_address.city"
+msgstr "City"
+
+msgid "shipping_address.street"
+msgstr "Address"
+
+msgid "shipping_address.country"
+msgstr "Country shipping"
+
+msgid "shipping_address.region"
+msgstr "Region shipping"
+
+msgid "shipping_name"
+msgstr "Shipping Name"
+
+msgid "price"
+msgstr "Price"
+
+msgid "shipping_address.zip"
+msgstr "Zip"
+
+msgid "comment"
+msgstr "Comment"
+
+msgid "shipping_address.metro"
+msgstr "Metro"
+
+msgid "shipping_est_delivery"
+msgstr "Delivery date"
+
+msgid "sku_code"
+msgstr "SKU Code"
+
+msgid "total"
+msgstr "Total"
+
+msgid "total_discount"
+msgstr "Total Discount"
+
+msgid "currency"
+msgstr "Currency"
+
+msgid "rate"
+msgstr "Rate"
+
+msgid "tax"
+msgstr "Tax"
+
+msgid "paid_date"
+msgstr "Paid Date"
+
+msgid "paid_month"
+msgstr "Paid Month"
+
+msgid "paid_year"
+msgstr "Paid Year"
+
+msgid "stock_id"
+msgstr "Stock Name"
+
+msgid "virtualstock_id"
+msgstr "Virtualstock Name"
+
+msgid "service_variant_id"
+msgstr "Service ID"
+
+msgid "Удалить"
+msgstr "Delete"
+
+msgid "Запись не была удалена"
+msgstr "Record isn't removed!"
+
+#: /wa-apps/shop/plugins/orderlogs/templates/DeleteLogs.html:64
+msgid "Вы действительно хотите удалить запись? Восстановить её будет нельзя"
+msgstr "You really want to remove record? It will be impossible to restore it"
+
+#: /wa-apps/shop/plugins/orderlogs/templates/DeleteLogs.html:64
+msgid "Удаляемая запись"
+msgstr "The deleted record"
+
+#: /wa-apps/shop/plugins/orderlogs/templates/Log.html:3
+msgid "Измененные позиции"
+msgstr "The changed positions"
+
+#: /wa-apps/shop/plugins/orderlogs/templates/Log.html:7
+#: /wa-apps/shop/plugins/orderlogs/templates/Log.html:28
+#: /wa-apps/shop/plugins/orderlogs/templates/Log.html:47
+msgid "Название"
+msgstr "Name"
+
+#: /wa-apps/shop/plugins/orderlogs/templates/Log.html:8
+#: /wa-apps/shop/plugins/orderlogs/templates/Log.html:30
+#: /wa-apps/shop/plugins/orderlogs/templates/Log.html:49
+msgid "Старое значение"
+msgstr "Old value"
+
+#: /wa-apps/shop/plugins/orderlogs/templates/Log.html:10
+#: /wa-apps/shop/plugins/orderlogs/templates/Log.html:32
+#: /wa-apps/shop/plugins/orderlogs/templates/Log.html:51
+msgid "Новое значение"
+msgstr "New value"
+
+#: /wa-apps/shop/plugins/orderlogs/templates/Log.html:12
+msgid "{$item.name}"
+msgstr "{$item.name}"
+
+#: /wa-apps/shop/plugins/orderlogs/templates/Log.html:24
+msgid "Измененные данные о заказе"
+msgstr "The changed data on the order"
+
+#: /wa-apps/shop/plugins/orderlogs/templates/Log.html:44
+msgid "Измененные данные о покупателе"
+msgstr "The changed data on the buyer"
+
+#: /wa-apps/shop/plugins/orderlogs/templates/Log.html:64
+msgid "Добавленные позиции"
+msgstr "The added positions"
+
+#: /wa-apps/shop/plugins/orderlogs/templates/Log.html:72
+msgid "Удаленные позиции"
+msgstr "Remote positions"
+
+#: /wa-apps/shop/plugins/orderlogs/templates/Styles.html:75
+msgid "Показать/скрыть историю"
+msgstr "Show/Hide history"
+
+#: /wa-apps/shop/plugins/orderlogs/lib/actions/shopOrderlogsPluginBackendSave.controller.php:33
+msgid "Продукт"
+msgstr "Product"
+
+#: /wa-apps/shop/plugins/orderlogs/lib/actions/shopOrderlogsPluginBackendSave.controller.php:34
+msgid "Услуга"
+msgstr "Service"
+
+#: /wa-apps/shop/plugins/orderlogs/lib/config/settings.php:5
+msgid "Включить плагин"
+msgstr "Enable Plugin"
+
+#: /wa-apps/shop/plugins/orderlogs/lib/config/settings.php:6
+msgid "Если плагин перестал быть полезен, его можно выключить."
+msgstr "If the plug-in has stopped being is useful, it can be switched off."
+
+#: /wa-apps/shop/plugins/orderlogs/lib/config/settings.php:13
+msgid "Добавить спойлер"
+msgstr "To add a spoiler"
+
+#: /wa-apps/shop/plugins/orderlogs/lib/config/settings.php:14
+msgid "Включенная настройка поумолчанию скрывает логи под спойлер"
+msgstr "The included control hides a poumolchaniya the ravine under a spoiler"

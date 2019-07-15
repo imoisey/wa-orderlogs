@@ -1,0 +1,72 @@
+<div class="orderlogs-content">
+{if $logs.edit_products}
+	<h3>[`Измененные позиции`]:</h3>
+	<table class='orderlogs-table'>
+		<tr>
+			<th>[`Название`]</th>
+			<th>[`Старое значение`]</th>
+			<th>[`Новое значение`]</th>
+		</tr>
+		{foreach from=$logs.edit_products item=item}
+			<tr><td colspan="3"><b>[`{$item.name}`]</b></td></tr>
+			{foreach from=$item.params key=param_name item=param}
+			<tr>
+				<td>{$param.name}</td>
+				<td>{$param.old}</td>
+				<td>{$param.new}</td>
+			</tr>
+			{/foreach}
+		{/foreach}
+	</table>
+{/if}
+{if $logs.edit_order}
+	<h3>[`Измененные данные о заказе`]:</h3>
+	<table class='orderlogs-table'>
+		<tr>
+			<th>[`Название`]</th>
+			<th>[`Старое значение`]</th>
+			<th>[`Новое значение`]</th>
+		</tr>
+		{foreach from=$logs.edit_order item=param}
+		<tr>
+			<td>{$param.name}</td>
+			<td>{$param.old}</td>
+			<td>{$param.new}</td>
+		</tr>
+		{/foreach}
+	</table>
+{/if}
+{if $logs.edit_client}
+	<h3>[`Измененные данные о покупателе`]:</h3>
+	<table class='orderlogs-table'>
+		<tr>
+			<th>[`Название`]</th>
+			<th>[`Старое значение`]</th>
+			<th>[`Новое значение`]</th>
+		</tr>
+		{foreach from=$logs.edit_client item=param}
+		<tr>
+			<td>{$param.name}</td>
+			<td>{$param.old}</td>
+			<td>{$param.new}</td>
+		</tr>
+		{/foreach}
+	</table>
+{/if}
+{if $logs.add_products}
+	<h3>[`Добавленные позиции`]:</h3>
+	<ul class='orderlogs-list'>
+	{foreach from=$logs.add_products item=value}
+		<li>{$value}</li>
+	{/foreach}
+	</ul>
+{/if}
+{if $logs.del_products}
+	<h3>[`Удаленные позиции`]:</h3>
+	<ul class='orderlogs-list'>
+	{foreach from=$logs.del_products item=value}
+		<li>{$value}</li>
+	{/foreach}
+	</ul>
+{/if}
+</div>

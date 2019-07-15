@@ -1,0 +1,239 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: shop/plugins/orderlogs\n"
+"POT-Creation-Date: 2015-07-16 15:22+0300\n"
+"PO-Revision-Date: \n"
+"Last-Translator: shop/plugins/orderlogs\n"
+"Language-Team: shop/plugins/orderlogs\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=((((n%10)==1)&&((n%100)!=11))?(0):(((((n%10)>=2)&&((n%10)<=4))&&(((n%100)<10)||((n%100)>=20)))?(1):2));\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-Basepath: .\n"
+"Language: ru_RU\n"
+"X-Generator: Poedit 1.8.11\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPath-1: .\n"
+
+msgid "name"
+msgstr "ФИО"
+
+msgid "firstname"
+msgstr "Имя"
+
+msgid "middlename"
+msgstr "Отчество"
+
+msgid "lastname"
+msgstr "Фамилия"
+
+msgid "login"
+msgstr "Логин"
+
+msgid "login.last_datetime"
+msgstr "Дата последней авторизации"
+
+msgid "login.last_datetime.sex"
+msgstr "Пол"
+
+msgid "login.last_datetime.sex.birth_day"
+msgstr "День рождения"
+
+msgid "login.last_datetime.sex.birth_day.birth_month"
+msgstr "Месяц рождения"
+
+msgid "login.last_datetime.sex.birth_day.birth_month.birth_year"
+msgstr "Год рождения"
+
+msgid "login.last_datetime.sex.birth_day.birth_month.birth_year.about"
+msgstr "О пользователе"
+
+msgid "status"
+msgstr "Статус"
+
+msgid "email"
+msgstr "Email"
+
+msgid "address.email.value"
+msgstr "Email"
+
+msgid "phone"
+msgstr "Телефон"
+
+msgid "address.email.phone.value"
+msgstr "Телефон"
+
+msgid "quantity"
+msgstr "Количество"
+
+msgid "sku_id"
+msgstr "Доп. параметр"
+
+msgid "shipping"
+msgstr "Стоимость доставки"
+
+msgid "discount"
+msgstr "Скидка"
+
+msgid "storefront"
+msgstr "Витрина"
+
+msgid "payment_name"
+msgstr "Способ оплаты"
+
+msgid "address.data.street"
+msgstr "Улица"
+
+msgid "shipping_address.city"
+msgstr "Город"
+
+msgid "shipping_address.street"
+msgstr "Улица, дом, квартира"
+
+msgid "shipping_address.country"
+msgstr "Cтрана доставки"
+
+msgid "shipping_address.region"
+msgstr "Регион доставки"
+
+msgid "shipping_name"
+msgstr "Способ доставки"
+
+msgid "price"
+msgstr "Цена"
+
+msgid "shipping_address.zip"
+msgstr "Индекс"
+
+msgid "comment"
+msgstr "Комментарий"
+
+msgid "shipping_address.metro"
+msgstr "Метро"
+
+msgid "shipping_est_delivery"
+msgstr "Дата доставки"
+
+msgid "sku_code"
+msgstr "Артикул"
+
+msgid "total"
+msgstr "Сумма"
+
+msgid "total_discount"
+msgstr "Сумма скидки"
+
+msgid "currency"
+msgstr "Валюта"
+
+msgid "rate"
+msgstr "Рейтинг"
+
+msgid "tax"
+msgstr "Налог"
+
+msgid "paid_date"
+msgstr "Дата оплаты"
+
+msgid "paid_month"
+msgstr "Месяц оплаты"
+
+msgid "paid_year"
+msgstr "Год оплаты"
+
+msgid "stock_id"
+msgstr "Склад"
+
+msgid "virtualstock_id"
+msgstr "Виртуальный склад"
+
+msgid "service_variant_id"
+msgstr "ID услуги"
+
+msgid "Удалить"
+msgstr "Удалить"
+
+msgid "Запись не была удалена"
+msgstr "Запись не была удалена"
+
+#: /wa-apps/shop/plugins/orderlogs/templates/DeleteLogs.html:64
+msgid "Вы действительно хотите удалить запись? Восстановить её будет нельзя"
+msgstr "Вы действительно хотите удалить запись? Восстановить её будет нельзя"
+
+#: /wa-apps/shop/plugins/orderlogs/templates/DeleteLogs.html:64
+msgid "Удаляемая запись"
+msgstr "Удаляемая запись"
+
+#: /wa-apps/shop/plugins/orderlogs/templates/Log.html:3
+msgid "Измененные позиции"
+msgstr "Измененные позиции"
+
+#: /wa-apps/shop/plugins/orderlogs/templates/Log.html:7
+#: /wa-apps/shop/plugins/orderlogs/templates/Log.html:28
+#: /wa-apps/shop/plugins/orderlogs/templates/Log.html:47
+msgid "Название"
+msgstr "Название"
+
+#: /wa-apps/shop/plugins/orderlogs/templates/Log.html:8
+#: /wa-apps/shop/plugins/orderlogs/templates/Log.html:30
+#: /wa-apps/shop/plugins/orderlogs/templates/Log.html:49
+msgid "Старое значение"
+msgstr "Старое значение"
+
+#: /wa-apps/shop/plugins/orderlogs/templates/Log.html:10
+#: /wa-apps/shop/plugins/orderlogs/templates/Log.html:32
+#: /wa-apps/shop/plugins/orderlogs/templates/Log.html:51
+msgid "Новое значение"
+msgstr "Новое значение"
+
+#: /wa-apps/shop/plugins/orderlogs/templates/Log.html:12
+msgid "{$item.name}"
+msgstr "{$item.name}"
+
+#: /wa-apps/shop/plugins/orderlogs/templates/Log.html:24
+msgid "Измененные данные о заказе"
+msgstr "Измененные данные о заказе"
+
+#: /wa-apps/shop/plugins/orderlogs/templates/Log.html:44
+msgid "Измененные данные о покупателе"
+msgstr "Измененные данные о покупателе"
+
+#: /wa-apps/shop/plugins/orderlogs/templates/Log.html:64
+msgid "Добавленные позиции"
+msgstr "Добавленные позиции"
+
+#: /wa-apps/shop/plugins/orderlogs/templates/Log.html:72
+msgid "Удаленные позиции"
+msgstr "Удаленные позиции"
+
+#: /wa-apps/shop/plugins/orderlogs/templates/Styles.html:75
+msgid "Показать/скрыть историю"
+msgstr "Показать/скрыть историю"
+
+#: /wa-apps/shop/plugins/orderlogs/lib/actions/shopOrderlogsPluginBackendSave.controller.php:33
+msgid "Продукт"
+msgstr "Продукт"
+
+#: /wa-apps/shop/plugins/orderlogs/lib/actions/shopOrderlogsPluginBackendSave.controller.php:34
+msgid "Услуга"
+msgstr "Услуга"
+
+#: /wa-apps/shop/plugins/orderlogs/lib/config/settings.php:5
+msgid "Включить плагин"
+msgstr "Включить плагин"
+
+#: /wa-apps/shop/plugins/orderlogs/lib/config/settings.php:6
+msgid "Если плагин перестал быть полезен, его можно выключить."
+msgstr "Если плагин перестал быть полезен, его можно выключить."
+
+#: /wa-apps/shop/plugins/orderlogs/lib/config/settings.php:13
+msgid "Добавить спойлер"
+msgstr "Добавить спойлер"
+
+#: /wa-apps/shop/plugins/orderlogs/lib/config/settings.php:14
+msgid "Включенная настройка поумолчанию скрывает логи под спойлер"
+msgstr "Включенная настройка поумолчанию скрывает логи под спойлер"
+
+msgid "total_str"
+msgstr "Сумма строкой"

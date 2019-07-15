@@ -1,0 +1,63 @@
+<script>
+	$(document).ready(function(){
+		$.orderlogs = {
+			order_id: {$order_id},
+			{literal}
+			init: function(){
+				jQuery.ajaxSetup({ cache:false });
+				
+				// Получаем данные по логам для заказа и прикручиваем данные
+				$.post('?plugin=orderlogs&module=logs', {order_id: this.order_id }, function (response){
+					if(response.status == 'ok') {
+						// Данные получены, проходим по списку логов
+						$(".s-order-timeline .field").each(function(i){
+							// Добавляем ID для лога
+							$(this).attr('data-orderlogs-id', response.data[i]);
+							// Добавляем кнопку удаления
+							$(this).prepend('<a href="javascript:$.orderlogs.delete('+response.data[i]+')" class="orderlogs-delete" title="[`Удалить`]"><i class="icon16 delete"></i></a>');
+						});
+					}
+
+				}, 'json');
+			},
+
+			delete: function(orderlogs_id) {
+				// Вставляем запись в блок пользователя
+				var order_data = $('[data-orderlogs-id='+orderlogs_id+']').clone();
+				order_data.find('.orderlogs-delete').remove();
+				$(".orderlogs-box-content").html(order_data.html());
+
+				$('#orderlogs-box').waDialog({
+					'buttons' : '<input type="submit" class="button green" value="Да">&nbsp;<input type="submit" class="button cancel red" value="Нет">',
+					'height': '250px',
+					'onSubmit': function (d) {
+						// Удаляем запись на сервере
+						$.post('?plugin=orderlogs&module=delete', {orderlogs_id: orderlogs_id }, function (response){
+							if(response.status == 'ok') {
+								$('[data-orderlogs-id='+orderlogs_id+']').remove();
+							}
+						}, 'json');
+
+					    d.trigger('close');
+					    return false;
+					},
+					'onCancel': function () {
+						return false;
+					}
+				});
+			}
+			{/literal}
+		}
+
+		$.orderlogs.init();
+	});
+</script>
+<div style="display: none">
+	<div id="orderlogs-box">
+		<p>[`Вы действительно хотите удалить запись? Восстановить её будет нельзя`].</p>
+		<span>[`Удаляемая запись`]:</span>
+		<div class="orderlogs-box-content">
+			
+		</div>
+	</div>
+</div>
